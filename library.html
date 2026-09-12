@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!---Copyrights: 2026 Gabriel Yoan L. Cortez. All rights reserved--->
+  <!---Webnotes: Keep in mind to watch out for sources, links, href attributes
+  because it will affect the website styles--->
+
+  <head>
+
+    <!--- Metalines --->
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Yoan L. Cortez">
+    <meta name="description" content="The Aphostac Library — logs, updates, and announcements">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphostac/Library</title>
+    <!--- Connections --->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+    <script src="script.js" defer></script>
+    <script src="library.js" defer></script>
+    <link rel="icon" href="Icon.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+    <!--- Navbar --->
+    <div class="nav-container">
+      <h1 class="nav-title"><a href="index.html" class="nav-title-link">Aphostac</a></h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="aspects.html">Aspects</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--- Library Hero --->
+    <main class="library-hero">
+      <span class="library-eyebrow">The Library</span>
+      <h1 class="library-title">Announcements</h1>
+      <p class="library-description">
+        Every milestone, decision, and idea behind Aphostac — recorded as it
+        happens. Tap any entry to read the full log.
+      </p>
+    </main>
+
+    <!--- Library Grid (populated by library.js) --->
+    <section class="library-grid" id="libraryGrid"></section>
+
+    <!--- Back to Home --->
+    <div class="library-footer">
+      <a class="library-back" href="index.html">← Back to Home</a>
+    </div>
+
+    <!--- Popup Overlay (shared component) --->
+    <div class="popup-overlay" id="libraryOverlay"></div>
+
+    <!--- Log Detail Sheet --->
+    <div class="popup-sheet" id="librarySheet" aria-hidden="true">
+      <div class="popup-handle"></div>
+      <div class="popup-scroll">
+        <div class="popup-header">
+          <span class="popup-eyebrow" id="libraryDetailTag">Log</span>
+          <h2 class="popup-title" id="libraryDetailTitle">Title</h2>
+        </div>
+        <div class="popup-section">
+          <p class="popup-text" id="libraryDetailBody">Body</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
