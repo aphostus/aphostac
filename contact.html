@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!---Copyrights: 2026 Gabriel Yoan L. Cortez. All rights reserved--->
+  <!---Webnotes: Keep in mind to watch out for sources, links, href attributes
+  because it will affect the website styles--->
+
+  <head>
+
+    <!--- Metalines --->
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Yoan L. Cortez">
+    <meta name="description" content="Get in touch with Aphostac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphostac/Contact</title>
+    <!--- Connections --->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
+    <script src="contact.js" defer></script>
+    <link rel="icon" href="Images/Icon.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+    <!--- Navbar --->
+    <div class="nav-container">
+      <h1 class="nav-title"><a href="index.html" class="nav-title-link">Aphostac</a></h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="support.html">Support</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="aspects.html">Aspects</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--- Contact Hero --->
+    <main class="contact-hero">
+      <span class="contact-eyebrow">Get in Touch</span>
+      <h1 class="contact-title">Contact Aphostac</h1>
+      <p class="contact-description">
+        Write your message below. By default it goes straight to our inbox —
+        or skip the writing and give us a call instead.
+      </p>
+    </main>
+
+    <!--- Composer --->
+    <section class="composer-wrapper">
+      <div class="composer-card">
+
+        <div class="composer-meta">
+          <label class="composer-field">
+            Name
+            <input class="composer-mini-input" type="text" id="composerName" placeholder="Your name">
+          </label>
+          <label class="composer-field">
+            Your Email
+            <input class="composer-mini-input" type="email" id="composerEmail" placeholder="you@example.com">
+          </label>
+        </div>
+
+        <label class="composer-label" for="composerMessage">Your Message</label>
+        <textarea
+          class="composer-textarea"
+          id="composerMessage"
+          maxlength="1000"
+          placeholder="Write as much as you'd like — questions, partnership ideas, feedback, anything..."
+        ></textarea>
+
+        <div class="composer-footer">
+          <span class="composer-char-count" id="composerCharCount">0 / 1000</span>
+          <span class="composer-recipient">Sends to <strong>Aphostus.org@gmail.com</strong></span>
+        </div>
+
+        <div class="composer-actions">
+          <button class="composer-send" id="composerSendBtn" type="button">Send Email</button>
+          <button class="composer-call" id="composerCallBtn" type="button">Call (+63) 924 526 6251</button>
+        </div>
+
+        <p class="composer-note" id="composerNote"></p>
+
+      </div>
+    </section>
+
+    <!--- Warning Section --->
+    <section class="warning-wrapper">
+      <div class="warning-card">
+        <span class="warning-label">⚠ Stay Safe</span>
+        <p class="warning-text">
+          Only trust messages from <strong>Aphostus.org@gmail.com</strong> and calls tied to
+          <strong>(+63) 924 526 6251</strong>. Aphostac's only official domains are
+          Aphostus.co and Aphostac.co. We will never ask for payment or personal
+          verification codes through unofficial channels — if something feels off, don't respond.
+        </p>
+      </div>
+    </section>
+
+    <!--- Back to Home --->
+    <div class="contact-footer">
+      <a class="contact-back" href="index.html">← Back to Home</a>
+    </div>
+
+  </body>
+</html>

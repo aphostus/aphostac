@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!---Copyrights: 2026 Gabriel Yoan L. Cortez. All rights reserved--->
+  <!---Webnotes: Keep in mind to watch out for sources, links, href attributes
+  because it will affect the website styles--->
+
+  <head>
+
+    <!--- Metalines --->
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Yoan L. Cortez">
+    <meta name="description" content="Support Aphostac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphostac/Support</title>
+    <!--- Connections --->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="support.css">
+    <script src="script.js" defer></script>
+    <script src="support.js" defer></script>
+    <link rel="icon" href="Images/Icon.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+    <!--- Navbar --->
+    <div class="nav-container">
+      <h1 class="nav-title"><a href="index.html" class="nav-title-link">Aphostac</a></h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="aspects.html">Aspects</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--- Support Hero --->
+    <main class="support-hero">
+      <span class="support-eyebrow">Support Our Startup</span>
+      <h1 class="support-title">Empower</h1>
+      <p class="support-description">
+        Aphostac is early — the easiest way to help right now is to follow along,
+        share it with someone, or just leave a word below.
+      </p>
+    </main>
+
+    <!--- Support Actions --->
+    <section class="support-actions">
+
+      <div class="support-card support-card-x">
+        <span class="support-card-label">Follow Us</span>
+        <p class="support-card-value">@AphostusOrg on X</p>
+        <p class="support-card-sub">Get updates the moment they happen.</p>
+        <a class="support-follow-btn" href="https://x.com/AphostusOrg" target="_blank" rel="noopener noreferrer">
+          Follow on X →
+        </a>
+      </div>
+
+      <div class="support-card">
+        <span class="support-card-label">Share</span>
+        <p class="support-card-value">Spread the word</p>
+        <p class="support-card-sub">Send Aphostac to someone who'd love it.</p>
+        <button class="support-share-btn" id="shareBtn" type="button">Share Aphostac</button>
+        <p class="support-share-note" id="shareNote"></p>
+      </div>
+
+    </section>
+
+    <!--- Comment Wall --->
+    <section class="comment-wrapper">
+      <div class="comment-card">
+
+        <h2 class="comment-title">Leave a Comment</h2>
+        <p class="comment-desc">Tell us what you think, ask a question, or just say hi.</p>
+
+        <div class="comment-form">
+          <input class="comment-input" id="commentName" placeholder="Your name" maxlength="40">
+          <textarea class="comment-input comment-textarea" id="commentText" maxlength="280" placeholder="Write a comment..."></textarea>
+          <div class="comment-form-footer">
+            <span class="comment-char-count" id="commentCharCount">0 / 280</span>
+            <button class="comment-submit" id="commentSubmitBtn" type="button">Post Comment</button>
+          </div>
+        </div>
+
+        <div class="comment-list" id="commentList"></div>
+
+      </div>
+    </section>
+
+    <!--- Back to Home --->
+    <div class="support-footer">
+      <a class="support-back" href="index.html">← Back to Home</a>
+    </div>
+
+  </body>
+</html>

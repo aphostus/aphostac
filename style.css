@@ -1,0 +1,630 @@
+/* Fonts >>> */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Extralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Light.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Regular.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Medium.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Bold.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashDisplay Variable';
+  src: url('Fonts/Clash Display/Woff2/ClashDisplay-Variable.woff2') format('woff2'),
+       url('Fonts/Clash Display/Woff1/ClashDisplay-Variable.woff') format('woff');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Body >>> */
+body {
+  background-color: black;
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Navbar >>> */
+:root {
+  --title-weight: 600;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 1.2rem 3rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.nav-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  flex-shrink: 0;
+  background: linear-gradient(to right, #ffffff, #8c8c8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.navbar {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #d9d9d9;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: #ffffff;
+}
+
+/* Medias >>> */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-list {
+    gap: 1.2rem;
+  }
+
+  .nav-list a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-title {
+    font-size: 0.85rem;
+  }
+
+  .nav-list {
+    gap: 0.7rem;
+  }
+
+  .nav-list a {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mainsect >>> */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  padding-bottom: 10rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title-main {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0 0 1.5rem;
+  background: linear-gradient(to right, #ffffff, #8c8c8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.description-main {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+/* Mainbuts >>> */
+.Viewact-main,
+.Groupact-main {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  width: auto;
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 100;
+}
+
+.Viewact-main:hover,
+.Groupact-main:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.Groupact-main {
+  bottom: max(1.5rem, env(safe-area-inset-bottom));
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.Viewact-main {
+  bottom: calc(max(1.5rem, env(safe-area-inset-bottom)) + 4rem);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    padding: 4rem 1.5rem;
+    padding-bottom: 9rem;
+  }
+
+  .title-main {
+    font-size: 2.2rem;
+  }
+
+  .description-main {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section {
+    padding: 3rem 1rem;
+    padding-bottom: 8.5rem;
+  }
+
+  .title-main {
+    font-size: 1.7rem;
+  }
+
+  .description-main {
+    font-size: 0.75rem;
+  }
+
+  .Viewact-main,
+  .Groupact-main {
+    left: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.85rem;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .Viewact-main {
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 3.5rem);
+  }
+
+  .Groupact-main {
+    bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Card Deck >>> */
+.deck-wrapper {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: calc(max(1.5rem, env(safe-area-inset-bottom)) + 8.6rem);
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.card-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 420px;
+  pointer-events: auto;
+}
+
+.deck-card {
+  flex: 1;
+  text-decoration: none;
+  border-radius: 18px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 92px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(.22,.9,.32,1),
+              opacity 0.4s ease,
+              background-color 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.deck-card-index {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.deck-card-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.deck-card-side {
+  background-color: #111111;
+  border: 1px solid #262626;
+  color: #9a9a9a;
+  transform: scale(0.86);
+  opacity: 0.55;
+}
+
+.deck-card-center {
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.08);
+  opacity: 1;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+.deck-card-center .deck-card-index {
+  opacity: 0.45;
+}
+
+.deck-card-side .deck-card-index {
+  opacity: 0.6;
+}
+
+.deck-card.is-swapping {
+  opacity: 0;
+  transform: scale(0.9) translateY(6px);
+}
+
+@media (max-width: 480px) {
+  .deck-wrapper {
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 7.2rem);
+  }
+  .card-deck {
+    gap: 0.5rem;
+    max-width: 340px;
+  }
+  .deck-card {
+    height: 78px;
+    padding: 0.8rem;
+    border-radius: 14px;
+  }
+  .deck-card-title {
+    font-size: 0.68rem;
+  }
+  .deck-card-index {
+    font-size: 0.58rem;
+  }
+}
+
+/* Popup Sheets >>> */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 195;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 230px;
+  background-color: #0d0d0d;
+  border-top: 1px solid #2a2a2a;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(.22,.9,.32,1);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popup-sheet.active {
+  transform: translateY(0);
+}
+
+.popup-handle {
+  flex-shrink: 0;
+  width: 44px;
+  height: 4px;
+  background-color: #333333;
+  border-radius: 999px;
+  margin: 0.9rem auto 0.6rem;
+  cursor: grab;
+  touch-action: none;
+}
+
+.popup-scroll {
+  overflow-y: auto;
+  padding: 0.5rem 1.8rem 3rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.popup-header {
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.popup-eyebrow {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+
+.popup-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0.4rem 0 0.8rem;
+  background: linear-gradient(to right, #ffffff, #8c8c8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.popup-section {
+  margin-bottom: 2rem;
+}
+
+.popup-subtitle {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0 0 0.8rem;
+}
+
+.popup-text {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.popup-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.popup-card {
+  background-color: #111111;
+  border: 1px solid #262626;
+  border-radius: 18px;
+  padding: 1.2rem 1.3rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.popup-card:hover {
+  border-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+.popup-card-index {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: #7a7a7a;
+}
+
+.popup-card-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.popup-card-text {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #a3a3a3;
+  margin: 0;
+}
+
+/* Popup Form >>> */
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.popup-label {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.popup-input {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #111111;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.popup-input:focus {
+  border-color: #6a6a6a;
+}
+
+.popup-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.popup-submit {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid #2a2a2a;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.popup-submit:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.popup-form-note {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #7a7a7a;
+  min-height: 1rem;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-form-note.show {
+  opacity: 1;
+  color: #9ad19a;
+}
+
+body.popup-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .popup-sheet {
+    top: 200px;
+  }
+  .popup-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-sheet {
+    top: 165px;
+  }
+  .popup-scroll {
+    padding: 0.5rem 1.3rem 2.5rem;
+  }
+  .popup-title {
+    font-size: 1.3rem;
+  }
+}

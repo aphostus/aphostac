@@ -1,0 +1,186 @@
+/* Sticky Navbar >>> */
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 150;
+}
+
+/* Aspects Hero >>> */
+.aspects-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem 2.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.aspects-eyebrow {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 1rem;
+}
+
+.aspects-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin: 0 0 1.2rem;
+  background: linear-gradient(to right, #ffffff, #8c8c8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.aspects-description {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+/* Aspects Grid >>> */
+.aspects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+}
+
+.aspect-card {
+  background-color: #111111;
+  border: 1px solid #262626;
+  border-radius: 18px;
+  padding: 1.5rem;
+  cursor: default;
+  transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+}
+
+.aspect-card:hover {
+  border-color: #3a3a3a;
+  background-color: #141414;
+  transform: translateY(-3px);
+}
+
+.aspect-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+
+.aspect-card-index {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #7a7a7a;
+}
+
+.aspect-card-tag {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: #d9d9d9;
+  background-color: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+}
+
+.aspect-card-title {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin: 0 0 0.6rem;
+}
+
+.aspect-card-text {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #a3a3a3;
+  margin: 0;
+}
+
+/* Highlighted / active state (JS-toggled) >>> */
+.aspect-card.is-active {
+  border-color: #ffffff;
+  background-color: #161616;
+}
+
+/* Footer link >>> */
+.aspects-footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.aspects-back {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.aspects-back:hover {
+  color: #ffffff;
+}
+
+/* Nav title link (keeps gradient, adds clickability) >>> */
+.nav-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Medias >>> */
+@media (max-width: 768px) {
+  .aspects-hero {
+    padding: 4rem 1.5rem 2rem;
+  }
+  .aspects-title {
+    font-size: 2.1rem;
+  }
+  .aspects-description {
+    font-size: 0.9rem;
+  }
+  .aspects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem 4.5rem;
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aspects-hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+  .aspects-title {
+    font-size: 1.7rem;
+  }
+  .aspect-card {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+  .aspect-card-title {
+    font-size: 0.95rem;
+  }
+  .aspect-card-text {
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!---Copyrights: 2026 Gabriel Yoan L. Cortez. All rights reserved--->
+  <!---Webnotes: Keep in mind to watch out for sources, links, href attributes
+  because it will affect the website styles--->
+
+  <head>
+
+    <!--- Metalines --->
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Yoan L. Cortez">
+    <meta name="description" content="The official page of Aphostac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphostac</title>
+    <!--- Connections --->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Images/Icon.png" type="image/x-icon">
+    
+  </head>
+  <body>
+
+    <!--- Navbar --->
+    <div class="nav-container">
+      <h1 class="nav-title">Aphostac</h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="library.html">Library</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!--- Mainsect --->
+    <main class=main-section>
+      <h1 class="title-main">Powered by Aposthus</h1>
+      <p class="description-main">Aphostac is powered by Aphostus, a platform built with the vision of 
+        becoming the central hub for academic and innovative pursuit worldwide. 
+        It is envisioned as a future business organization dedicated to advancing education and innovation on a global scale.
+      </p>
+      <button class="Viewact-main">Overview</button>
+      <button class="Groupact-main">Request</button>
+    </main>
+    <!--- Showcards --->
+    <div class="deck-wrapper">
+      <div class="card-deck" id="cardDeck">
+        <a class="deck-card deck-card-side" id="deckCardLeft" href="aspects.html">
+          <span class="deck-card-index">01</span>
+          <h3 class="deck-card-title">Global Academic Workspace</h3>
+        </a>
+        <a class="deck-card deck-card-center" id="deckCardCenter" href="aspects.html">
+          <span class="deck-card-index">02</span>
+          <h3 class="deck-card-title">Global Academic Courses</h3>
+        </a>
+        <a class="deck-card deck-card-side" id="deckCardRight" href="aspects.html">
+          <span class="deck-card-index">03</span>
+          <h3 class="deck-card-title">Global Academic Social Network</h3>
+        </a>
+      </div>
+    </div>
+    <!--- Popup Overlay --->
+    <div class="popup-overlay" id="popupOverlay"></div>
+
+    <!--- Overview Popup --->
+    <div class="popup-sheet" id="overviewSheet" aria-hidden="true">
+      <div class="popup-handle"></div>
+      <div class="popup-scroll">
+        <div class="popup-header">
+          <span class="popup-eyebrow">Overview</span>
+          <h2 class="popup-title">About Aphostac</h2>
+        </div>
+
+        <div class="popup-section">
+          <h3 class="popup-subtitle">Our History</h3>
+          <p class="popup-text">Aphostac began as a simple idea: education and innovation shouldn't be scattered across dozens of disconnected tools and platforms. What started as a small academic project grew into a vision for a single global hub, powered by Aphostus, where students, teachers, and institutions could learn, collaborate, and build together. Today, Aphostac is being developed with that same founding principle in mind — bringing structure, community, and intelligence into one connected academic experience.
+          Developed by Gabriel Yoan L. Cortez (Founder)</p>
+        </div>
+
+        <div class="popup-section">
+          <h3 class="popup-subtitle">What Aphostac Offers</h3>
+          <div class="popup-cards">
+
+            <div class="popup-card">
+              <span class="popup-card-index">01</span>
+              <h4 class="popup-card-title">Unified Academic Workspace</h4>
+              <p class="popup-card-text">A single space where students and teachers manage coursework, projects, and communication together, removing the need to juggle multiple disconnected apps for one class.</p>
+            </div>
+
+            <div class="popup-card">
+              <span class="popup-card-index">02</span>
+              <h4 class="popup-card-title">Global Academic Courses</h4>
+              <p class="popup-card-text">Structured, interconnected courses that let teachers build curricula and let students learn at their own pace, with progress tracked clearly across every subject.</p>
+            </div>
+
+            <div class="popup-card">
+              <span class="popup-card-index">03</span>
+              <h4 class="popup-card-title">Academic Social Network</h4>
+              <p class="popup-card-text">A dedicated space for students and educators to connect with peers and mentors worldwide, share ideas, and build academic relationships beyond the classroom.</p>
+            </div>
+
+            <div class="popup-card">
+              <span class="popup-card-index">04</span>
+              <h4 class="popup-card-title">Innovation & Research Hub</h4>
+              <p class="popup-card-text">A place for students to publish projects and for teachers to guide research, with tools designed to encourage original thinking and real academic contribution.</p>
+            </div>
+
+            <div class="popup-card">
+              <span class="popup-card-index">05</span>
+              <h4 class="popup-card-title">AI Academic Support</h4>
+              <p class="popup-card-text">Built-in AI assistance to help students study smarter and help teachers save time on grading, feedback, and lesson planning, without replacing the human side of learning.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Request Popup --->
+    <div class="popup-sheet" id="requestSheet" aria-hidden="true">
+      <div class="popup-handle"></div>
+      <div class="popup-scroll">
+        <div class="popup-header">
+          <span class="popup-eyebrow">Request</span>
+          <h2 class="popup-title">Get Early Access</h2>
+          <p class="popup-text">Aphostac hasn't launched yet. Leave your details below and we'll notify you the moment it's available.</p>
+        </div>
+
+        <form class="popup-form" id="requestForm">
+          <label class="popup-label">
+            Full Name
+            <input class="popup-input" type="text" name="name" placeholder="Your name" required>
+          </label>
+
+          <label class="popup-label">
+            Email Address
+            <input class="popup-input" type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="popup-label">
+            I am a
+            <select class="popup-input" name="role" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="institution">Institution</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label class="popup-label">
+            Message (optional)
+            <textarea class="popup-input popup-textarea" name="message" placeholder="Tell us a bit about yourself..."></textarea>
+          </label>
+
+          <button class="popup-submit" type="submit">Request Early Access</button>
+          <p class="popup-form-note" id="requestFormNote"></p>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
